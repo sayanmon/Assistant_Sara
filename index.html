@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SARA AI</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- FontAwesome CSS CDN for icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Toggle Button -->
+  <button id="chatbot-toggle" class="pulse" aria-label="Open chatbot">
+    <img src="ai.svg" style="filter:invert();" alt="" srcset="">
+  </button>
+
+  <!-- Chatbox -->
+  <div class="chatbox" id="chatbox" aria-hidden="true">
+    <div class="chat-header">
+      🤖 Ask Sayan's AI Assistant
+      <button class="close-btn" aria-label="Close chatbot">
+        <img src="close.svg" style="filter:invert();" alt="" srcset="">
+      </button>
+
+    </div>
+
+
+
+    <div class="chat-body" id="chat-body">
+      <div class="message bot">
+        <div class="bubble">👋 Hey there! I'm Sara, your friendly chatbot 🤖  
+Wanna know about my boss Sayan Mondal? Ask me anything! 😄  </div>
+      </div>
+    </div>
+    <div class="chat-suggestions">
+      <p>💡 Try asking about:</p>
+      <div class="suggestion-buttons" id="suggestion-buttons">
+        <!-- Buttons will be inserted dynamically -->
+      </div>
+    </div>
+
+
+    <div class="chat-footer">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off"
+        aria-label="Message input" />
+      <button id="send-btn" aria-label="Send message">
+        <img src="send.svg" style="filter:invert();" alt="" srcset="">
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
