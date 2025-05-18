@@ -89,7 +89,7 @@ async function sendMessage() {
   showTyping();
 
   try {
-    const res = await fetch("https://saraserver.up.railway.app/api/message", {
+    const res = await fetch("https://saraserver.onrender.com/api/message", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: msg }),
