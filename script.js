@@ -87,9 +87,10 @@ async function sendMessage() {
   appendMessage("user", msg);
   input.value = "";
   showTyping();
-
+//backend https://saraserver-647762378660.us-central1.run.app
+//backend https://saraserver.onrender.com
   try {
-    const res = await fetch("https://saraserver.onrender.com/api/message", {
+    const res = await fetch("https://saraserver-647762378660.us-central1.run.app/api/message", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: msg }),
